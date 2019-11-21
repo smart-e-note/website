@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topNav" id="dropDownClick">
+                <li><a href="#home">home</a></li>
+                <li><a href="#news">news</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#seach">search</a></li>
+                <li  class="topNavRight"><a href="#signUp">sign up</a></li>
+                <li class="topNavRight"><a href="#signIn">sign in</a></li>
+                <li class="dropDownIcon"><a href="javascript:void(0)" onclick="dropDownMeanu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="homeDiv">
+            <div class="column-2">
+                <div class="row">
+                    <div class="Sabout">
+                        <a href="#about"><p>Welcome to All Notes a free source of online books with a news feed</p></a>
+                    </div> 
+                </div> 
+                <div class="row">
+                    <div>
+                    </div>
+                </div> 
+            </div>
+            <div class="column-2">
+                <div class="row">
+                    <div>
+                        <h2><a href="#signIn">Sign In</a></h2>
+                        <form>
+                            <div>
+                                <h2></h2>
+                                <input>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <script>
+            function dropDownMeanu ()
+            {
+                var x = document.getElementById("dropDownClick");
+                if(x.className === "topNav")
+                {
+                    x.className += " Responsive";
+                }
+                else
+                {
+                    x.className = "topNav";
+                }
+            }
+        </script>
+    </body>
+</html>

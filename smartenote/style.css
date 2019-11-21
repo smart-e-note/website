@@ -1,0 +1,141 @@
+/*########## DEFAULTS #############*/
+nav, heaeder, footer
+{
+    display: block;
+}
+body
+{
+    background-color: black;
+    line-height: 1;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*######### NAV BAR ##########*/
+nav
+{
+    width: 100%;
+    margin: 0;
+}
+nav ul
+{
+    background-color: #1b1e23;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topNav li
+{
+    list-style: none;
+    float: left;
+}
+ul.topNav li.topNavRight
+{
+    float: right;
+}
+ul.topNav li a
+{
+    display: block;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #ffbd1b;
+    
+}
+ul.topNav li a:hover
+{
+    background-color: #ffbd1b;
+    color: #1b1e23;
+    font-weight: 520;
+ }
+ul.topNav li.dropDownIcon
+{
+    display: none;
+}
+/*####### MAIN BODY #########*/
+Div.homeDiv 
+{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+Div.homeDiv .Sabout
+{
+    margin-top: 4%;
+    width: 80%;
+}
+Div.homeDiv *
+{
+    font-weight: bold;
+    color: #ffbd1b;
+}
+Div.homeDiv *:not(input):hover
+{
+    color: #f9f3d1;
+}
+/*######### STYLES ###########*/
+a
+{
+    text-decoration: none;
+}
+.row
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after
+{
+    display: table;
+    clear: both;
+    content: "";
+}
+[class*="column"]
+{
+    float: left;
+}
+.column-1{width: 100%;}
+.column-2{width: 50%;}
+.column-3{width: 33.33%;}
+.column-4{width: 25%;}
+.column-5{width: 20%;}
+/*######### MOBILE ##########*/
+@media screen and (max-width: 680PX)
+{
+    ul.topNav li:not(:nth-child(1))
+    {
+        display: none;
+    }
+    ul.topNav li.dropDownIcon
+    {
+        display: block;
+        float: right;
+    }
+      ul.topNav.Responsive
+    {
+        position: relative;
+    }
+      ul.topNav.Responsive li
+    {
+        display: inline;
+        float: none;
+    }
+     ul.topNav.Responsive li.dropDownIcon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+      ul.topNav.Responsive li a
+    {
+        display: block;
+        text-align: left;
+    }
+}
